@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven' //必加
+group='com.github.muyishuangfeng' //必加,com.github.<用户名>(也就是你GtiHub上的地址)
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 29
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'me.yokeyword:fragmentation:1.3.6'
+    implementation 'me.yokeyword:fragmentation-swipeback:1.3.6'
+    implementation 'com.github.muyishuangfeng:LTSDKAndroidXUIGoogle:1.0.0'
+    implementation 'com.github.muyishuangfeng:LTSDKAndroidXUIFB:1.0.0'
+    implementation 'com.github.muyishuangfeng:LTSDKAndroidXUICore:1.0.1'
+    implementation 'com.github.muyishuangfeng:LTSDKAndroidXUIGuest:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    //MD风格
+    implementation 'com.google.android.material:material:1.0.0'
+}
